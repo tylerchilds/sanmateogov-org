@@ -1,0 +1,128 @@
+* {
+    /* Sets our Baseline Grid */
+    --rhythm: 2rem;
+
+    /* Sets font-size relative to rhythm */
+    --line-height-ratio: 1.4;
+    --font-family: "Trade Gothic W01", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+a {
+  --link: hsl(230, 60%, 50%);
+  --link-visited: hsl(290, 60%, 50%);
+  --link-hover: hsl(230, 80%, 60%);
+  --link-active: hsl(350, 60%, 50%);
+}
+
+a:link {
+  color: var(--link);
+}
+
+a:visited {
+  color: var(--link-visited);
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+a:active {
+  color: var(--link-active);
+}
+
+/* Layout Specific Styles */
+
+body{
+    background: #fff;
+}
+
+.header {
+    background-color: #056cb6;
+    overflow: hidden;
+    padding: 32px 20px;
+}
+
+.header h1,
+.header h2 {
+    --sub-rhythm: 1.8rem;
+    --line-height-ratio: 1.5;
+
+    font-size: var(--font-size);
+    font-weight: normal;
+    line-height: var(--line-height);
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.header h2 {
+    --sub-rhythm: 1.5rem;
+
+    margin: 0;
+}
+
+.header img {
+    float: left;
+    max-width: 70px;
+    margin-right: 20px;
+}
+
+.header a {
+    --link: #fff;
+    --link-visited: #fff;
+    --link-hover: #fff;
+    --link-active: #fff;
+
+    text-decoration: none;
+}
+
+.header-layout {
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    background-color: rgb(247, 247, 247);
+    text-align: center;
+}
+
+.navigation ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+.navigation li {
+    padding: 0 var(--rhythm-half);
+}
+
+.navigation a {
+    --link: rgb(20, 81, 119);
+    --link-visited: rgb(20, 81, 119);
+    --link-hover: #fff;
+    --link-active: #fff;
+    --sub-rhythm: 1.3rem;
+    display: block;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    padding: 8px 13px;
+    text-decoration: none;
+}
+
+.navigation a:hover,
+.naviation a:active {
+    background: #145177;
+}
+
+.main {
+    padding: var(--rhythm);
+}
+
+.main h3 {
+    color: #036cb6;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.footer {
+    padding: var(--rhythm);
+}
