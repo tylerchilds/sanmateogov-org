@@ -35,6 +35,7 @@ a:active {
 body{
     background: #fff;
     color: rgb(85, 90, 90);
+    overflow: hidden;
 }
 
 .header {
@@ -87,12 +88,13 @@ body{
 }
 
 .navigation ul {
-    display: flex;
     list-style-type: none;
     margin: 0;
+    overflow: hidden;
 }
 
 .navigation li {
+    float: left;
     padding: 0 var(--rhythm-half);
 }
 
