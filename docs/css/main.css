@@ -1,6 +1,6 @@
 * {
     /* Sets our Baseline Grid */
-    --rhythm: 2rem;
+    --rhythm: 1.8rem;
 
     /* Sets font-size relative to rhythm */
     --line-height-ratio: 1.4;
@@ -34,6 +34,7 @@ a:active {
 
 body{
     background: #fff;
+    color: rgb(85, 90, 90);
 }
 
 .header {
@@ -114,6 +115,8 @@ body{
 }
 
 .main {
+    margin: 0 auto;
+    max-width: 55rem;
     padding: var(--rhythm);
 }
 
@@ -125,4 +128,5 @@ body{
 
 .footer {
     padding: var(--rhythm);
+    text-align: center;
 }
